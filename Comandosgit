@@ -1,0 +1,85 @@
+git config --global user.name "João Pedro" - configurando o nome do usuario
+
+git config --global user.email "joaok8@gmail.com" - configurando o email do usuario
+
+git config --global core.editor sub - configurando o editor do seu computador
+
+git config user.name - verificando o nome do usuario
+
+git config user.email - verificando o email do usuario
+
+git config --list - lista todas as configurações
+
+git init - inicializando o repositório git e verificar todas as mudanças no projeto .git
+
+git status - reportar como está o repositório nesse momento
+
+* untracked (arquivo criado porém o git ainda não reconhece ele)
+
+* unmodified (não tem nenhuma modificação)
+
+* modified (arquivo foi alterado)
+
+* staged (estou pronto para ser commitado)
+
+git commit -m "mensagem" (snapshot dos arquivos)
+
+hash - identificação do commit
+
+git log --decorate (mostra as informações do commit)
+
+git log --author="Will" (mostra as informações do autor dos commits)
+
+git log --shortlog (Mostra todos os autores e seus commits)
+
+git log --graph (Mostra de forma gráfica o que ta acontecendo com as branches)
+
+git show (hash) - consigo ver o que aconteceu com o commit
+
+git diff (mostra as modificações do arquivo, sempre use antes de dar um commit)
+
+git diff --name-only (Mostrar somente o nome do arquivo modificado)
+
+git checkout Read.me (Retorna o arquivo para antes da modificação)
+
+git reset HEAD read.md (tirando o seu arquivo do staged)
+
+git commit -am "mensagem" (Adiciona todos os arquivos modificados + uma mensagem)
+
+git reset --soft (PEgar as modifficações - vai matar o commit porém o arquivo ja ta pronto rpa ser comitado)
+
+git reset --mixed (Meio termo)
+
+git reset --hard (Vai voltar tudo que foi feito no commit)
+
+git push -u origin master (envia os arquivos para o repositório)
+
+git clone https:sakopksaopksopa (clonando um repositório remoto)
+
+fork - pega o projeto que não é seu e faz uma cópia dele para você
+
+git checkout -b testing (Cria uma nova branch e ja entra nela)
+
+git branch (Mostra as Branchs existentes e qual você está no momento)
+
+git checkout master (Muda para a branch "master")
+
+git branch -D testing (Deleta a branch "testing")
+
+git merge (junta as branchs com um commit de merge - cria um ciclo)
+
+PRÓS
+
+- Operação não destrutiva (não destrói commit algum)
+Contras
+- Commit extra
+- Histórico poluído (junta os commits em 1 commit só, fica dificl pra ler se tiver muitos branches)
+
+git rebase (junta os commits deixando em ordem linear, joga as mudanças para o inicio da fila) -usar sempre verificando as modificações
+
+Prós
+- Evita commits extras
+- Histórico linear
+Contra
+- Perde a ordem cronológica
+
