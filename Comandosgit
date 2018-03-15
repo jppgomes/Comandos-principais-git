@@ -83,3 +83,14 @@ Prós
 Contra
 - Perde a ordem cronológica
 
+
+git fetch
+git checkout "Nome da branch"
+git pull origin "nome da branch"
+depois que terminar !
+
+git stash - Guardar as modificações na memória
+git stash aply - aplica as modificações a hora que vc quiser
+git stash list
+git stash clear
+
